@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pöttyös Könyvek</title>
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+            function myFunction() {
+                alert("Sikeres fizetés. Köszönjük a vásárlást!");
+            }
+        </script>
+
+    </head>
+
+    <body>
+
+        <div class="topnav1" id="Topnav1">
+            <table>
+                <tr> 
+                    <td class="zero_td">  <a href="1_Home.html" class="zero_td"> <img src="logo2.jpg "  height="70px" class="zero_td"> </a>    </td>
+                    <td class="firs1_td">  <a href="2_Books.html" target="_self"> Pöttyös Könyvek</a>    </td>
+    
+                    <td class="sec_td"> <div class="search-container">
+                            <form action="/action_page.php">
+                            
+                            <button type="submit"><image src="search.png" width="15px" height="15px"> </button>
+                                <input type="text" placeholder="Keresés..." name="search" >
+                            </form>
+                        </div> 
+                    </td>
+    
+                   
+                    <td class="firs3_td">  <a href="3_Contact.html" >Kontakt</a>    </td>
+                    <td class="third_td"> <a href="4_Login.html" >Bejelentkezés</a> </td>
+                     
+                         <td class="fouth_td">   <a href="5_Basket.html"  style="float: left;" >   <img src="2.png" alt="items in the basket" width="40px" height="40px"  style="float: left"> Kosár</a> </td>
+                   
+                </tr>
+            </table>
+    
+
+            
+        </div>
+    
+        <div class="topnav2" id="Topnav2" style="text-align:center">
+            <table> 
+               
+                <tr> 
+                    <td>  <a href="2_Books.html#gold1" class="gold2"> <span class="dot" id="gold3"></span> Arany Pötty</a> </td>
+                    <td> <a href="2_Books.html#purple1" class="purple2"> <span class="dot" id="purple3"></span> Bíbor Pötty</a> </td>
+                    <td> <a href="2_Books.html#orange1" class="orange2"> <span class="dot" id="orange3"></span> Narancs Pötty</a> </td>
+                    <td>  <a href="2_Books.html#scarlet1" class="scarlet2"> <span class="dot" id="scarlet3"></span> Vörös Pötty</a> </td>
+                    <td>  <a href="2_Books.html#ruby1" class="ruby2"> <img src="ruby.png" width="35px"> Rubin Pötty</a>  </td>
+                    <td>  <a href="2_Books.html#sapphire1" class="sapphire2"><img src="sapphire.png" width="35px"> Zafír Pötty</a> </td>
+                    <td>  <a href="2_Books.html#christal1" class="christal2"> <img src="christal.png" width="35px"> Kristály Pötty</a> </td>
+
+                </tr>
+    
+            </table>
+            
+        </div>
+        
+         <h1> A kosár tartalma: </h1>
+         <table class="center"> 
+
+            <!-- Rendelt könyv1-->
+            <tr>
+                <td> 
+                    <img src="Arany pötty 8 Suttogó-völgy.jpeg" width="120px">
+                </td>
+
+                <td width="600px"> 
+                    <p id="title"> Suttogó-völgy </p>
+                    <p id="author"> Sophia Amoruso </p>
+                    
+                </td> 
+
+                <td> <input type="submit" value="-"> 1 db <input type="submit" value="+"> </td>
+                <td> 3700 Ft </td>
+                <td> <input type="submit" value="Törlés"> </td>
+            </tr>
+
+            <!-- Rendelt könyv2-->
+            <tr>
+                <td> 
+                    <img src="vörös2.jpg" width="120px">
+                </td>
+
+                <td width="600px"> 
+                    <p id="title"> A végzet ereklyéi 1. – Csontváros </p>
+                    <p id="author"> Cassandra Clare </p>
+                    
+                </td> 
+
+                <td> <input type="submit" value="-"> 1 db <input type="submit" value="+"> </td>
+                <td> 2771 Ft </td>
+                <td> <input type="submit" value="Törlés"> </td>
+            </tr>
+
+            <!-- Rendelt könyv3-->
+            <tr>
+                <td> 
+                    <img src="vörös5.jpg" width="120px">
+                </td>
+
+                <td width="600px"> 
+                    <p id="title"> Árnyék és csont (Grisha trilógia 1.) </p>
+                    <p id="author"> Leigh Bardugo </p>
+                    
+                </td> 
+
+                <td> <input type="submit" value="-"> 2 db <input type="submit" value="+"> </td>
+                <td> 7222 Ft </td>
+                <td> <input type="submit" value="Törlés"> </td>
+            </tr>
+
+         </table>
+
+        <div class="sum"> 
+            <h2> Szállítás: </h2>
+    
+        
+                <form action="/action_page.php">
+                    <p>Kérem válasszon az alábbi szállítási módok közül:</p>
+                    <input type="radio" id="delivery1" name="delivery" value="delivery1" checked >
+                    <label for="delivery"> A szállítási költség egységesen, az országon belül <span class="price"> 1200 </span>Ft.</label><br>
+
+                    <input type="radio" id="libri" name="delivery" value="libri" onclick="this.checked = false;">
+                    <label for="delivery2"> A könyvek a Libri boltokban ingyen átvehetőek. <span class="price">0 </span>Ft.</label>
+
+                </form>
+
+            
+
+
+                <h2> Fizetési mód: </h2>
+            <form action="/action_page.php">
+                <p>Kérem válasszon az alábbi fizetésmódok közül:</p>
+                <input type="radio" id="creditcard1" name="payment" value="creditcard1" checked >
+                <label for="creditcard1"> Fizetés bankkártyával előre utalássál (0 Ft)</label><br>
+
+                <input type="radio" id="creditcard2" name="payment" value="creditcard2" onclick="this.checked = false;">
+                <label for="creditcard2"> Fizetés bankkártyával vagy készpénzzel utánvéttel (+400 Ft)</label>
+
+                
+            </form>
+
+            <h2> Végösszeg: 14.893 Ft</h2>
+            <input type="submit" value="Fizetés" onclick="myFunction()">
+
+        </div>
+
+        <p> </p>
+        
+         <footer>
+            <p> 
+                <img src="logo_dark2.jpg"  height="100px" > <br>
+                <strong>Elérhetőségek:</strong>  <br>
+                Telefonszám: +36 20 412 033                <br>
+                E-mail: fineselection@gmail.com         <br>
+                Cím: 1054 Budapest, Báthory utca 24/A   <br>
+            </p>
+        </footer>
+    </body>
+</html>
