@@ -1,0 +1,516 @@
+
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+
+  outline-color: #333;
+  outline-width: 2px;
+  outline-style: solid;
+}
+
+
+
+.topnav1 {
+  
+  background-color: rgb(255, 255, 255);
+  /*overflow: hidden;*/
+ height: 95px;
+
+  /*topnav stays when scrolling*/
+  position: sticky;
+  top: 0px;
+  
+}
+
+/* Style links inside top nav1 */
+.topnav1 a {
+  float: left;
+  display: block;
+  color: #147474;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* Change the color of links on hover */
+.topnav1 a:hover {
+  background-color: rgb(37, 35, 35);
+  color: #22c2c2;
+}
+
+
+.topnav1 img {
+  vertical-align: top;
+}
+
+.topnav1 td{
+  width: 330px;
+  text-align: center;
+}
+
+
+  /*Top nav2*/
+.topnav2 {
+  background-color: #333;
+  overflow: hidden;
+  padding: 0px;
+  height: 70px;
+  vertical-align: top;
+
+  position: sticky;
+  top: 95px;
+}
+
+
+
+
+/* Style the links inside the navigation bar */
+.topnav2 a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 22px;
+  height: 60px;
+}
+
+#gold3{
+  background-color: rgb(239, 228, 176);
+ 
+}
+#purple3{
+  background-color: rgb(228, 13, 134);
+  
+}
+#orange3{
+  background-color: rgb(236, 81, 35);
+}
+#scarlet3{
+  background-color: rgb(237, 27, 36);
+}
+#ruby3{
+  background-color: rgb(216, 33, 97);
+}
+#sapphire3{
+  background-color: rgb(54, 168, 220);
+}
+#christal3{
+  background-color: rgb(174, 175, 177);
+}
+
+
+.gold2:hover{
+  background-color: rgb(239, 228, 176);
+  color: black;
+}
+.purple2:hover {
+  background-color: rgb(228, 13, 134);
+  color: black;
+}
+.orange2:hover {
+  background-color: rgb(236, 81, 35);
+  color: black;
+}
+.scarlet2:hover {
+  background-color: rgb(237, 27, 36);
+  color: black;
+}
+.ruby2:hover {
+  background-color: rgb(216, 33, 97);
+  color: black;
+}
+.sapphire2:hover {
+  background-color: rgb(54, 168, 220);
+  color: black;
+}
+.christal2:hover {
+  background-color:  rgb(174, 175, 177);
+  color: black;
+}
+
+.center
+{
+  text-align: center;
+}
+
+.zero_td a:hover{
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+/* Change the color of links on hover 
+.topnav2 a:hover {
+  background-color: rgb(45, 184, 189);
+  color: black;
+}*/
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav2 .icon {
+  display: none;}
+
+#home {
+
+    font-size: large;
+   }
+
+td {
+    width: 250px;
+    text-align: center;
+    vertical-align:middle;
+   
+  }
+
+.container
+{
+  margin: 80px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+
+  li {
+    float: right;
+    border-left: 1px solid white;
+    border-left-style:groove;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    
+  }
+
+  li a:hover {
+    background-color:#4be9e9;
+    color: black
+  }
+
+
+/* Style the header */
+.header {
+  padding: 20px 20px;
+  background:#333;
+}
+
+/* Page content */
+.content {
+  padding: 20px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+
+  /* 2_Books.html style */
+
+
+
+  /* styling progress bar*/
+  progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;  
+            width: 170px;
+            height: 15px;
+            
+  }
+
+progress::-webkit-progress-value { 
+  background: rgb(239, 228, 176);
+ /* border-radius: 26px;*/
+}
+
+/* trin to set progress id-s but doesn't work*/
+  #file_gold progress::-webkit-progress-value{
+    color: rgb(239, 228, 176);
+    background: rgb(239, 228, 176);
+  }
+
+  progress#file_gold ::-webkit-progress-value{
+    color: rgb(239, 228, 176);
+    background: rgb(239, 228, 176);
+  }
+
+  progress::-webkit-progress-value#file_gold { 
+    background: rgb(239, 228, 176);
+    /*border-radius: 26px;*/
+  }
+/**/
+
+
+
+#left{
+  text-align: left;
+}
+
+#right{
+  text-align: right;
+}
+
+.Booktable{
+  border-width: 4px;
+  border-color: #333;
+}
+
+  .Booktable td{
+    
+    width: 600px;
+    padding-left: 50px;
+  }
+
+#title{
+  font-size: larger;
+}
+
+
+.indent{
+  margin-left: 380px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.indent :hover{
+  background-color: #333;
+  color: rgb(239, 228, 176);
+}
+
+#title{
+  
+  font-size: 30px;
+}
+
+#author{
+  font-size: 22px;
+}
+
+.tablehead{
+  background-color: #333;
+  text-align: center;
+  border-width: 0px;
+  
+  
+}
+/* Color of tablehead on Bokks page*/
+#gold{
+  color: rgb(239, 228, 176);
+  border-color: rgb(239, 228, 176);
+}
+
+#purple{
+  color: rgb(228, 13, 134);
+  border-color: rgb(228, 13, 134);
+}
+
+#orange{
+  color: rgb(236, 81, 35);
+  border-color: rgb(236, 81, 35);
+}
+
+#scarlet{
+  color: rgb(237, 27, 36);
+  border-color: rgb(237, 27, 36);
+}
+
+#ruby{
+  color: rgb(216, 33, 97);
+  border-color: rgb(216, 33, 97);
+}
+
+#sapphire{
+  color: rgb(54, 168, 220);
+  border-color: rgb(54, 168, 220);
+}
+
+#christal{
+  color: rgb(193, 194, 196);
+  border-color: rgb(193, 194, 196);
+}
+
+
+
+/* Main text in Home page*/
+.maintext{
+  width: 700px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+  float: left;
+  vertical-align: text-top;
+  padding-top: 50px;
+}
+
+
+.row{
+  display: table;
+}
+
+.div1, .div2, .maintext{
+  display: table-cell;
+  
+}
+
+.div1, .div2{
+  width: 22%;
+  padding-top: 140px;
+  padding-inline: 80px;
+
+}
+
+.div1{
+  float: left;
+}
+
+.div2{
+  
+  vertical-align: text-top;
+  text-align: right;
+
+}
+
+.div1.img {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border: 20px;
+}
+
+
+
+.tbl{
+  
+  width: 100%;
+  padding-left: 75px;
+  padding-right: 75px;
+  font-size: 20px;
+
+}
+
+
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
+.tbl td{
+  
+  width: 33%;
+
+}
+
+
+
+.border{
+  border-bottom-width: 5px;
+  border-bottom-style: dotted;
+  
+}
+
+#border_gold{
+  border-bottom-color: rgb(239, 228, 176);
+}
+
+#border_purple{
+  border-bottom-color: rgb(228, 13, 134);
+}
+
+#border_orange{
+  border-bottom-color: rgb(236, 81, 35);
+}
+
+#border_scarlet{
+  border-bottom-color: rgb(237, 27, 36);
+}
+
+#border_ruby{
+  border-bottom-color: rgb(216, 33, 97);
+}
+
+#border_sapphire{
+  border-bottom-color: rgb(54, 168, 220);
+}
+
+#border_chrystal{
+  border-bottom-color: rgb(174, 175, 177);
+}
+
+
+#rightindent{
+  padding-right: 200px;
+  
+}
+
+footer {
+    
+  background-color: #333;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: white;
+  width: 100%;
+ 
+}
+
+
+
+/*Login page*/
+
+#loginh2{
+  padding-top: 70px;
+
+}
+
+.line_height{
+  line-height: 2;
+  text-align: center;
+  height: 320px;
+  
+}
+
+
+
+/* Contact Page*/
+.table_contact{
+  
+  padding-left: 25%;
+}
+
+
+/*Basket Page*/
+.sum{
+  padding-left: 70px;
+}
+
+
+footer p{
+  line-height: 2;
+  text-align: center;
+
+  
+  
+}
